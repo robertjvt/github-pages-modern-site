@@ -13,25 +13,146 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🚁 Aerial Storytelling & Drone Media</h1>
-			<p>
-				Welcome to UNIQM, your partner for premium aerial photography and videography in real estate. Based in the Netherlands, we specialize in capturing stunning drone footage that brings properties to life.
-			</p>
-			<p>
-				Our expertise includes high-quality aerial perspectives, immersive property showcases, and compelling visual narratives that help real estate agents and developers present their properties in the best possible light.
-			</p>
-			<p>What we offer:</p>
-			<ul>
-				<li>Professional aerial photography and videography</li>
-				<li>Real estate property showcases</li>
-				<li>Drone cinematography and visual storytelling</li>
-				<li>Post-production editing and enhancement</li>
-				<li>360-degree property views and virtual tours</li>
-			</ul>
-			<p>
-				Whether you're a real estate agent, developer, or property owner in the Netherlands, UNIQM delivers exceptional aerial content that stands out. Let us help you tell your property's story from the skies.
-			</p>
+			<section class="hero">
+				<h1>🚁 Aerial Storytelling & Drone Media</h1>
+				<p class="lead">
+					Welcome to UNIQM, your partner for premium aerial photography and videography in real estate. Based in the Netherlands, we specialize in capturing stunning drone footage that brings properties to life.
+				</p>
+			</section>
+
+			<section class="features">
+				<div class="feature-card">
+					<h3>📸 Professional Photography</h3>
+					<p>High-quality aerial perspectives that showcase properties from unique angles</p>
+				</div>
+				<div class="feature-card">
+					<h3>🎥 Cinematic Videography</h3>
+					<p>Immersive property showcases with compelling visual narratives</p>
+				</div>
+				<div class="feature-card">
+					<h3>🌐 360° Virtual Tours</h3>
+					<p>Interactive virtual tours that let viewers explore properties remotely</p>
+				</div>
+			</section>
+
+			<section class="content">
+				<h2>Why Choose UNIQM?</h2>
+				<p>
+					Our expertise includes high-quality aerial perspectives, immersive property showcases, and compelling visual narratives that help real estate agents and developers present their properties in the best possible light.
+				</p>
+				
+				<h3>What we offer:</h3>
+				<ul class="services-list">
+					<li>Professional aerial photography and videography</li>
+					<li>Real estate property showcases</li>
+					<li>Drone cinematography and visual storytelling</li>
+					<li>Post-production editing and enhancement</li>
+					<li>360-degree property views and virtual tours</li>
+				</ul>
+				
+				<p class="cta-text">
+					Whether you're a real estate agent, developer, or property owner in the Netherlands, UNIQM delivers exceptional aerial content that stands out. Let us help you tell your property's story from the skies.
+				</p>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero {
+		text-align: center;
+		padding: 3em 0 2em;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		border-radius: 16px;
+		margin-bottom: 3em;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	}
+
+	.hero h1 {
+		color: white;
+		margin-bottom: 1rem;
+		font-size: 2.5em;
+	}
+
+	.lead {
+		font-size: 1.2em;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 2em;
+		line-height: 1.6;
+	}
+
+	.features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2em;
+		margin-bottom: 3em;
+	}
+
+	.feature-card {
+		background: white;
+		padding: 2em;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	}
+
+	.feature-card h3 {
+		color: #667eea;
+		margin-bottom: 0.5em;
+	}
+
+	.content {
+		background: white;
+		padding: 2.5em;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	}
+
+	.content h2 {
+		color: #667eea;
+		margin-bottom: 1em;
+	}
+
+	.services-list {
+		background: #f8fafc;
+		padding: 1.5em 2em;
+		border-radius: 8px;
+		margin: 1.5em 0;
+		border-left: 4px solid #667eea;
+	}
+
+	.services-list li {
+		margin: 0.5em 0;
+		color: rgb(var(--gray-dark));
+	}
+
+	.cta-text {
+		font-size: 1.1em;
+		color: rgb(var(--gray-dark));
+		margin-top: 2em;
+		padding: 1.5em;
+		background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+		border-radius: 8px;
+		border-left: 4px solid #764ba2;
+	}
+
+	@media (max-width: 720px) {
+		.hero h1 {
+			font-size: 1.8em;
+		}
+		.lead {
+			font-size: 1em;
+		}
+		.features {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
