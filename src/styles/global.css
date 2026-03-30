@@ -49,6 +49,45 @@ main {
 	margin: auto;
 	padding: 3em 1em;
 }
+
+.stack-showcase {
+	margin: 1.5rem 0 2rem;
+	padding: 1rem;
+	border-radius: 14px;
+	background: linear-gradient(130deg, #0f1b33 0%, #22386c 55%, #2c6e73 100%);
+	color: #f5f8ff;
+}
+
+.stack-showcase h2 {
+	margin: 0 0 0.4rem;
+}
+
+.stack-showcase p {
+	margin: 0.4rem 0 0.8rem;
+}
+
+.pill-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 0.7rem;
+}
+
+.pill {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.12);
+	color: #ffffff;
+	padding: 0.4rem 0.7rem;
+	border-radius: 999px;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.pill.active {
+	background: #f59e0b;
+	border-color: #f59e0b;
+	color: #1f2937;
+}
 h1,
 h2,
 h3,
