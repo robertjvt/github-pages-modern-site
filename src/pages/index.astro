@@ -14,45 +14,42 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<section class="hero">
-				<h1>🚁 Aerial Storytelling & Drone Media</h1>
-				<p class="lead">
-					Welcome to UNIQM, your partner for premium aerial photography and videography in real estate. Based in the Netherlands, we specialize in capturing stunning drone footage that brings properties to life.
-				</p>
-			</section>
-
-			<section class="features">
-				<div class="feature-card">
-					<h3>📸 Professional Photography</h3>
-					<p>High-quality aerial perspectives that showcase properties from unique angles</p>
-				</div>
-				<div class="feature-card">
-					<h3>🎥 Cinematic Videography</h3>
-					<p>Immersive property showcases with compelling visual narratives</p>
-				</div>
-				<div class="feature-card">
-					<h3>🌐 360° Virtual Tours</h3>
-					<p>Interactive virtual tours that let viewers explore properties remotely</p>
+				<div class="hero-panel">
+					<h1>SMART ASSET MANAGEMENT<br /><span>SAFE AND ACCURATE</span></h1>
+					<p>Collecting, analyzing and providing insights</p>
+					<a href="/about" class="cta">Learn more</a>
 				</div>
 			</section>
 
-			<section class="content">
-				<h2>Why Choose UNIQM?</h2>
-				<p>
-					Our expertise includes high-quality aerial perspectives, immersive property showcases, and compelling visual narratives that help real estate agents and developers present their properties in the best possible light.
-				</p>
-				
-				<h3>What we offer:</h3>
-				<ul class="services-list">
-					<li>Professional aerial photography and videography</li>
-					<li>Real estate property showcases</li>
-					<li>Drone cinematography and visual storytelling</li>
-					<li>Post-production editing and enhancement</li>
-					<li>360-degree property views and virtual tours</li>
-				</ul>
-				
-				<p class="cta-text">
-					Whether you're a real estate agent, developer, or property owner in the Netherlands, UNIQM delivers exceptional aerial content that stands out. Let us help you tell your property's story from the skies.
-				</p>
+			<section class="services">
+				<article class="service-card">
+					<h3>INSPECTION<br />SERVICES</h3>
+					<div class="line"></div>
+					<p>
+						Supporting the digital transformation of assets management with smart automated data gathering methods and remote viewing.
+					</p>
+				</article>
+				<article class="service-card">
+					<h3>DATA SERVICES</h3>
+					<div class="line"></div>
+					<p>
+						Including point clouds, meshes, 3D modelling and digital twins for intelligence and consulting services.
+					</p>
+				</article>
+				<article class="service-card">
+					<h3>MAPPING &amp; GEO<br />SERVICES</h3>
+					<div class="line"></div>
+					<p>
+						Surveying at scale with precision measurements and creation of digital terrain models for projects.
+					</p>
+				</article>
+				<article class="service-card">
+					<h3>FILM &amp;<br />PHOTOGRAPHY</h3>
+					<div class="line"></div>
+					<p>
+						Experienced with challenging conditions and visual requirements for company videos and commercials.
+					</p>
+				</article>
 			</section>
 		</main>
 		<Footer />
@@ -61,98 +58,104 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 <style>
 	.hero {
-		text-align: center;
-		padding: 3em 0 2em;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
-		border-radius: 16px;
-		margin-bottom: 3em;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+		margin-top: 1.3rem;
+		min-height: 370px;
+		display: flex;
+		align-items: flex-start;
+		padding: 1.1rem 0 0.3rem;
+	}
+
+	.hero-panel {
+		width: min(730px, 100%);
+		background: linear-gradient(120deg, rgba(9, 14, 31, 0.88), rgba(10, 16, 38, 0.48));
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		padding: 2.9rem 2.5rem 2.35rem;
 	}
 
 	.hero h1 {
-		color: white;
-		margin-bottom: 1rem;
-		font-size: 2.5em;
+		font-size: clamp(2rem, 4.2vw, 3.36rem);
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		margin: 0 0 0.3em;
+		line-height: 1.1;
 	}
 
-	.lead {
-		font-size: 1.2em;
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 0 2em;
-		line-height: 1.6;
+	.hero h1 span {
+		color: #f39a3e;
 	}
 
-	.features {
+	.hero p {
+		margin: 0.3rem 0 1.9rem;
+		font-size: 1.95rem;
+		color: rgba(241, 246, 255, 0.94);
+	}
+
+	.cta {
+		display: inline-block;
+		padding: 0.75rem 2.2rem;
+		border: 1px solid #c37a37;
+		border-radius: 999px;
+		color: #f3f6ff;
+		text-decoration: none;
+		font-size: 1.05rem;
+	}
+
+	.services {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2em;
-		margin-bottom: 3em;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 1.25rem;
+		margin-top: 2.8rem;
 	}
 
-	.feature-card {
-		background: white;
-		padding: 2em;
-		border-radius: 12px;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	.service-card {
+		background: linear-gradient(170deg, rgba(16, 21, 43, 0.82), rgba(8, 13, 29, 0.9));
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		padding: 1.45rem 1.2rem 1.2rem;
+		min-height: 262px;
 	}
 
-	.feature-card:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	.service-card h3 {
+		font-size: 2rem;
+		line-height: 1;
+		letter-spacing: 0.01em;
 	}
 
-	.feature-card h3 {
-		color: #667eea;
-		margin-bottom: 0.5em;
+	.line {
+		width: 48px;
+		height: 4px;
+		background: #204f9a;
+		margin: 0.8rem 0 1rem;
 	}
 
-	.content {
-		background: white;
-		padding: 2.5em;
-		border-radius: 12px;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	.service-card p {
+		margin: 0;
+		color: rgba(223, 230, 247, 0.9);
+		font-size: 1.25rem;
+		line-height: 1.42;
 	}
 
-	.content h2 {
-		color: #667eea;
-		margin-bottom: 1em;
-	}
-
-	.services-list {
-		background: #f8fafc;
-		padding: 1.5em 2em;
-		border-radius: 8px;
-		margin: 1.5em 0;
-		border-left: 4px solid #667eea;
-	}
-
-	.services-list li {
-		margin: 0.5em 0;
-		color: rgb(var(--gray-dark));
-	}
-
-	.cta-text {
-		font-size: 1.1em;
-		color: rgb(var(--gray-dark));
-		margin-top: 2em;
-		padding: 1.5em;
-		background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-		border-radius: 8px;
-		border-left: 4px solid #764ba2;
+	@media (max-width: 1100px) {
+		.services {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 720px) {
-		.hero h1 {
-			font-size: 1.8em;
+		.hero {
+			min-height: auto;
 		}
-		.lead {
-			font-size: 1em;
+
+		.hero-panel {
+			padding: 1.5rem 1.1rem;
 		}
-		.features {
+
+		.hero p {
+			font-size: 1.1rem;
+		}
+
+		.services {
 			grid-template-columns: 1fr;
+			margin-top: 1.7rem;
 		}
 	}
 </style>

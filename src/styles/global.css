@@ -5,16 +5,15 @@
  */
 
 :root {
-	--accent: #2563eb;
-	--accent-dark: #1e40af;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--accent: #f39a3e;
+	--accent-dark: #d6812d;
+	--black: 9, 14, 31;
+	--gray: 133, 150, 189;
+	--gray-light: 43, 54, 85;
+	--gray-dark: 229, 235, 249;
+	--gray-gradient: linear-gradient(120deg, #1b2342 0%, #0f1735 48%, #0a1130 100%);
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 8px 24px rgba(0, 0, 0, 28%), 0 24px 44px rgba(0, 0, 0, 35%);
 }
 @font-face {
 	font-family: "Atkinson";
@@ -35,18 +34,22 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: #f8fafc;
+	background:
+		radial-gradient(1300px 600px at 20% 5%, rgba(44, 58, 99, 0.8) 0%, rgba(12, 19, 45, 0) 60%),
+		radial-gradient(1200px 560px at 95% 15%, rgba(17, 31, 80, 0.74) 0%, rgba(9, 14, 33, 0) 56%),
+		linear-gradient(90deg, #222a45 0%, #091132 42%, #030820 100%);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 18px;
-	line-height: 1.7;
+	line-height: 1.6;
+	min-height: 100vh;
 }
 main {
-	width: 1200px;
-	max-width: calc(100% - 2em);
+	width: 1280px;
+	max-width: calc(100% - 4em);
 	margin: auto;
-	padding: 4em 2em;
+	padding: 2em 2em 4em;
 }
 
 .stack-showcase {
@@ -94,7 +97,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: #ffffff;
 	line-height: 1.2;
 }
 h1 {
@@ -120,7 +123,7 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+	color: #ffc07e;
 }
 p {
 	margin-bottom: 1em;
@@ -145,7 +148,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	background-color: rgba(255, 255, 255, 0.12);
 	border-radius: 2px;
 }
 pre {
@@ -160,17 +163,19 @@ blockquote {
 	padding: 0 0 0 20px;
 	margin: 0;
 	font-size: 1.333em;
+	color: rgba(255, 255, 255, 0.92);
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
 	}
 	main {
-		padding: 1em;
+		max-width: calc(100% - 2em);
+		padding: 1em 1em 2em;
 	}
 }
 
