@@ -1,33 +1,35 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'Drone Photography Guide'
+description: 'Guide to professional aerial photography and drone cinematography for real estate'
 pubDate: 'Jun 19 2024'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+## Professional Aerial Photography for Real Estate
 
-## Headings
+This guide covers the fundamentals of professional drone photography and videography for real estate marketing.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## Key Techniques
 
-# H1
+### High-Quality Imagery
+Professional aerial photography requires state-of-the-art equipment and expert piloting to capture stunning property views.
 
-## H2
+### Video Cinematography
+Smooth drone footage creates compelling property videos that engage potential buyers and showcase properties effectively.
 
-### H3
+### 360-Degree Views
+Comprehensive property documentation with multiple angles and perspectives provides complete property understanding.
 
-#### H4
+### Neighborhood Context
+Aerial shots showing surrounding amenities, parks, and neighborhood characteristics help buyers understand the property's location and community.
 
-##### H5
+## Post-Production
 
-###### H6
+Professional editing and color grading enhance footage and create polished marketing materials that stand out in the real estate market.
 
-## Paragraph
+## Virtual Tours
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Immersive 360-degree virtual tours allow potential buyers to explore properties remotely and gain comprehensive understanding of available space and features.
 
 ## Images
 
